@@ -1,0 +1,51 @@
+#footer{
+    background: #F5F5F5;
+    padding: 0 0 10% 0;
+    text-align: center;
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        font-size: 13px;
+
+        li {
+            a{
+
+                &.act{
+                    color: #FF749F;
+                    font-weight: 600;
+                }
+
+
+            }
+        }
+    }
+
+    .footerlogo{
+        margin: 20px 0;
+    }
+
+    .call{
+        font-weight: bold;
+        img{
+            width: 22px;
+            vertical-align: bottom;
+            margin-left: 5px;
+        }
+    }
+
+
+    address{
+        font-size: 13px;
+        line-height: 1.3;
+        margin:  10px 0;
+
+
+    }
+    .copyright{
+        font-size: 10px;
+        color: #888;
+        margin: 15px 0;
+    }
+}
