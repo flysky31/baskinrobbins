@@ -10,14 +10,18 @@
   <link rel="stylesheet" href="./css/main.css">  
   <!-- 웹 앱 매니페스트를 읽어 들이기 -->
   <link rel="manifest" href="manifest.json">
-  <!-- 서비스 워커를 등록 -->
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-    .then((reg) => {
-      console.log('서비스 워커가 등록됨.', reg);
-    });
-  }
+<script>
+	if ("serviceWorker" in navigator) {
+             //서비스워커가 있을때 (서비스 워커 지원여부)
+	      navigator.serviceWorker
+		.register("sw.js") //등록
+		.then(function (success) {
+			console.log("serviceworker 설치에 성공했습니다!!", success);
+		})
+		.catch(function (error) {
+			console.log("serviceworker 설치 실패 ㅠㅠ", error);
+		});
+	}
 </script>
 </head>
 <body class="main">
