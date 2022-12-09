@@ -4,14 +4,16 @@ let closeBox = document.getElementById("closeBox");
 let aside = document.getElementById("aside");
 
 
-menubar.addEventListener("click", function(e){
+//menubar.addEventListener("click", function(e){
+$("menubar").click(function(e){
   e.preventDefault();
   aside.classList.add("on");
 
 })
 
 //메뉴바 닫기
-closeBox.addEventListener("click",function(e){
+//closeBox.addEventListener("click",function(e){
+$("closeBox").click(function(e){
   e.preventDefault();
   aside.classList.remove("on");
 })
